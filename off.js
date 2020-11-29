@@ -143,7 +143,7 @@ window.onload = function () {
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/sw.js')
+            .register('/zgvr81.github.io/sw.js')
             .then(function () { console.log('Service Worker Registered'); });
     }
 
