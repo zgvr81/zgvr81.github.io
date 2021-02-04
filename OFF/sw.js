@@ -3,8 +3,8 @@ self.addEventListener('install', function (e) {
         caches.open('video-store').then(function (cache) {
             return cache.addAll([
                 '/zgvr81/zgvr81.github.io/blob/master/OFF/',
-                '/zgvr81/zgvr81.github.io/blob/master/OFF/index.html',
-                '/zgvr81/zgvr81.github.io/blob/master/OFF/index.js',
+                '/zgvr81/zgvr81.github.io/blob/master/OFF/index1.html',
+                '/zgvr81/zgvr81.github.io/blob/master/OFF/index1.js',
                 '/zgvr81/zgvr81.github.io/blob/master/OFF/style.css'
             ]);
         })
