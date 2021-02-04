@@ -2,10 +2,10 @@ self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open('video-store').then(function (cache) {
             return cache.addAll([
-                '/zgvr81/zgvr81.github.io/OFF/',
-                '/zgvr81/zgvr81.github.io/OFF/index1.html',
-                '/zgvr81/zgvr81.github.io/OFF/index1.js',
-                '/zgvr81/zgvr81.github.io/OFF/style.css'
+                '/zgvr81.github.io/OFF/',
+                '/zgvr81.github.io/OFF/index1.html',
+                '/zgvr81.github.io/OFF/index1.js',
+                '/zgvr81.github.io/OFF/style.css'
             ]);
         })
     );

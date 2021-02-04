@@ -143,7 +143,7 @@ window.onload = function () {
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/zgvr81/zgvr81.github.io/OFF/sw.js')
+            .register('/zgvr81.github.io/OFF/sw.js')
             .then(function () { console.log('Service Worker Registered'); });
     }
 
