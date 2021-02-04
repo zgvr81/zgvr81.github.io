@@ -2,10 +2,10 @@ self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open('video-store').then(function (cache) {
             return cache.addAll([
-                '/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/',
-                '/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/offline.html',
-                '/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/index.js',
-                '/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/style.css'
+                '/zgvr81/zgvr81.github.io/blob/master/ex30%20B/',
+                '/zgvr81/zgvr81.github.io/blob/master/ex30%20B/offline.html',
+                '/zgvr81/zgvr81.github.io/blob/master/ex30%20B/index.js',
+                '/zgvr81/zgvr81.github.io/blob/master/ex30%20B/style.css'
             ]);
         })
     );
