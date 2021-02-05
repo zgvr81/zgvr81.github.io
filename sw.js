@@ -2,7 +2,7 @@ self.addEventListener('install', function (e) {
     e.waitUntil(
         caches.open('video-store').then(function (cache) {
             return cache.addAll([
-                '/zgvr81.github.io',
+                '/zgvr81.github.io/',
                 '/zgvr81.github.io/off.html',
                 '/zgvr81.github.io/off.js',
                 '/zgvr81.github.io/off.css'
