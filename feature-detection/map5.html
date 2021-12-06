@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Canvas Support Test</title>
+    <script src="js/modernizr-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function findMe() {
+            if (Modernizr.geolocation) {
+                alert("Geolocation supported!!!");
+                navigator.geolocation.getCurrentPosition(showCurrentLocation, errorHandler, {
+                    enableHighAccuracy: true
+                });
+            } else {
+                alert("Your Browser does not support Geolocation.");
+            }
+        }
+        function showCurrentLocation(position) {
+            document.getElementById("curlocation").innerHTML = "Current Latitude : " + position.coords.latitude + " , Current Longitude : " + position.coords.longitude;
+        }
+        function errorHandler(error) {
+            alert("Error while retrieving current position. Error code: " + error.code + ",Message: " + error.message);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="curlocation">
+            <input type="button" value="Find My Location" onclick="findMe()" />
+        </div>
+    </div>
+</body>
+
+</html>
