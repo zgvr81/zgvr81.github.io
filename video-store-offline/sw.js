@@ -2,10 +2,10 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('video-store').then(function(cache) {
      return cache.addAll([
-       '/ifksp/zgvr81.github.io/video-store-offline/',
-       '/ifksp/zgvr81.github.io/video-store-offline/index.html',
-       '/ifksp/zgvr81.github.io/video-store-offline/index.js',
-       '/ifksp/zgvr81.github.io/video-store-offline/style.css'
+       '/zgvr81.github.io/video-store-offline/',
+       '/zgvr81.github.io/video-store-offline/index.html',
+       '/zgvr81.github.io/video-store-offline/index.js',
+       '/zgvr81.github.io/video-store-offline/style.css'
      ]);
    })
  );
