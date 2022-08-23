@@ -143,7 +143,7 @@ function storeVideo(mp4Blob, webmBlob, name) {
 
   if('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('/zgvr81/zgvr81.github.io/video-store-offline/sw.js')
+             .register('/video-store-offline/sw.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
 };
